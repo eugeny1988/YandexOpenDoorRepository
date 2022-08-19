@@ -15,6 +15,8 @@ fun main() {
 
             }
         }
+        else
+            newNumbersList.add("1")
     }
     for (k in newNumbersList) {
         final += k.toInt()
