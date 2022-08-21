@@ -2,40 +2,31 @@ fun main() {
     val s = checkNotNull(readLine())
     var newNumbersList = mutableListOf<String>()
     var final = 0
-    for (i in s.indices) {
+    for (i in 1 until s.length) {
 
         if (s[i].isDigit() && s[i - 1].isLetter()) {
             newNumbersList.add(s[i].toString())
-            try {
-                if (s[i + 1].isDigit()) {
-                    newNumbersList[newNumbersList.lastIndex] += (s[i + 1].toString())
-                    println(newNumbersList[newNumbersList.lastIndex])
-                } else
-                    if (!s[i].isDigit() && s[i + 1].isLetter())
-                        newNumbersList.add("1")
-
-            } catch (e: StringIndexOutOfBoundsException) {
-                continue
-            }
-        } else {
-            try {
-                if (s[i + 1].isLetter()) {
-                    newNumbersList.add("1")
+            for (j in i + 1 until s.length) {
+                if (s[j].isLetter() && j - i > 1) {
+                    for (k in i + 1 until j) {
+                        newNumbersList[newNumbersList.lastIndex] += (s[k].toString())
+                    }
                 }
-            } catch (e: StringIndexOutOfBoundsException) {
-                newNumbersList.add("1")
-                continue
             }
-
-
         }
+        else if (s[i].isLetter() && s[i-1].isLetter()){
+            newNumbersList.add("1")
+        }
+    }
 
-    }
-    for (k in newNumbersList) {
-        final += k.toInt()
-    }
-    println(newNumbersList)
-    println(final)
+//        } else if (s[i].isLetter()) {
+//            newNumbersList.add("1")
+//        }
+        for (q in newNumbersList) {
+            final += q.toInt()
+        }
+        println(newNumbersList)
+        println(final)
+
 }
-
 
