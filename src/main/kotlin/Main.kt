@@ -8,25 +8,26 @@ fun main() {
             newNumbersList.add(s[i].toString())
             for (j in i + 1 until s.length) {
                 if (s[j].isLetter() && j - i > 1) {
-                    for (k in i + 1 until j) {
+                    for (k in (i + 1) until j) {
+                        if (s[k].isDigit())
                         newNumbersList[newNumbersList.lastIndex] += (s[k].toString())
                     }
+                    break
                 }
             }
-        }
-        else if (s[i].isLetter() && s[i-1].isLetter()){
+        } else if (s[i].isLetter() && s[i - 1].isLetter()) {
             newNumbersList.add("1")
         }
     }
+    if (s[s.lastIndex].isLetter()){
+        newNumbersList.add("1")
+    }
 
-//        } else if (s[i].isLetter()) {
-//            newNumbersList.add("1")
-//        }
-        for (q in newNumbersList) {
-            final += q.toInt()
-        }
-        println(newNumbersList)
-        println(final)
+
+    for (q in newNumbersList) {
+        final += q.toInt()
+    }
+    println(final)
 
 }
 
