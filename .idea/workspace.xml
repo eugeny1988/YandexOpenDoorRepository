@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="493ca603-ad72-477e-b195-f32cc79b5438" name="Changes" comment="Вариант с NumberFormatException">
+    <list default="true" id="493ca603-ad72-477e-b195-f32cc79b5438" name="Changes" comment="Вроде бы рабочий вариант">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661087224829</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Вроде бы рабочий вариант">
+      <created>1661193726473</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661193726473</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +116,7 @@
     <MESSAGE value="Third commit" />
     <MESSAGE value="Предварительные изменения" />
     <MESSAGE value="Вариант с NumberFormatException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вариант с NumberFormatException" />
+    <MESSAGE value="Вроде бы рабочий вариант" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вроде бы рабочий вариант" />
   </component>
 </project>
